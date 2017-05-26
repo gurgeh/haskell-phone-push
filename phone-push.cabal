@@ -21,8 +21,10 @@ source-repository head
 
 Library
   Exposed-modules:
-      Android
-      IOS
+      PhonePush.Android
+      PhonePush.Android.Payload
+      PhonePush.IOS
+      PhonePush.IOS.Payload
   ghc-options:
       -Wall -fno-warn-unused-do-bind
   default-language:
@@ -42,4 +44,9 @@ Library
     , convertible >= 1.0.11.1
     , binary >= 0.5.1.0
     , http-types >= 0.8.0
+    , resourcet >= 1.1.9
+    , aeson
+    , text
+    , casing
+    , data-default
 
